@@ -1,12 +1,19 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
-
+gem 'bootstrap-sass', '2.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'json'
 
+group :development, :test do 
+  gem 'sqlite3', '1.3.5'
+end 
+
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
