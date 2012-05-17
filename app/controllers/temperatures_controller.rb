@@ -1,4 +1,5 @@
 class TemperaturesController < ApplicationController
+
   # GET /temperatures
   # GET /temperatures.json
   def index
