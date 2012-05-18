@@ -16,4 +16,6 @@
 //= require bootstrap
 //= require bootstrap-tab
 //= require bootstrap-datepicker
+//= require jquery.flot
+//= require jquery.flot.symbol.min
 //= require_tree .

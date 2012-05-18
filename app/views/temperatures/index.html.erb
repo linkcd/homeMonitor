@@ -12,12 +12,16 @@
 <% @temperatures.each do |temperature| %>
   <tr>
     <td><%= temperature.created_at.in_time_zone('Asia/Shanghai').to_s(:local) %></td>
-    <td><%= temperature.value %></td>
+    <td class='values'><%= temperature.value %></td>
     <td style='display:none'><%= link_to 'Show', temperature %></td>
     <td style='display:none'><%= link_to 'Edit', edit_temperature_path(temperature) %></td>
     <td style='display:none'><%= link_to 'Destroy', temperature, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
+
+<div id='chart1'style="width:800px;height:400px;" ></div>
+
+
 
 
